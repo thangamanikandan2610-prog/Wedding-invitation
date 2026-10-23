@@ -1,26 +1,12 @@
-# Premium Tamil Wedding Invitation Website
+# Interactive Wedding Invitation — Version 2
 
-A mobile-first single-page wedding invitation demo built with HTML, CSS, and JavaScript.
+Mobile-first invitation with animated cover, countdown, couple section, events, gallery, map search, music toggle, scroll reveals, and demo RSVP form.
 
-## Preview locally
-1. Extract the ZIP.
-2. Open `index.html` in Chrome.
+## Update your existing GitHub Pages site
+1. Extract this ZIP.
+2. Open https://github.com/thangamanikandan2610-prog/Wedding-invitation
+3. Click **Add file → Upload files**.
+4. Upload `index.html`, replacing the existing file, then click **Commit changes**.
+5. Wait 1–3 minutes and refresh the published site.
 
-## Publish with GitHub Pages
-1. Sign in to GitHub and create a new **public** repository, e.g. `wedding-invitation`.
-2. Upload `index.html` to the repository root and commit the file.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Choose branch `main` and folder `/ (root)`, then Save.
-6. Wait for GitHub Pages to publish the website. The URL will look like `https://YOUR-USERNAME.github.io/wedding-invitation/`.
-
-## Customize before publishing
-Search `index.html` and replace:
-- `Arjun` and `Meera` with the couple's names.
-- Dates and times with the real event details.
-- `Shree Lakshmi Mahal` and Madurai with the venue details.
-- Demo image URLs with the couple's actual photographs.
-- The Google Maps search URL with the exact venue address.
-
-## Important limitation
-The RSVP form is currently a front-end demo. It displays a preview message but does not store or send submissions. Connect a form backend or Google Forms/Sheets integration if you need to collect real RSVPs.
+Demo names, family names, times, and venue should be changed before sharing. RSVP currently only shows an on-page confirmation and does not store/send replies. Photos and music use external URLs.
