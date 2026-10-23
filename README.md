@@ -1,12 +1,27 @@
-# Interactive Wedding Invitation — Version 2
+# Modern Luxury Wedding Invitation (GitHub Pages)
 
-Mobile-first invitation with animated cover, countdown, couple section, events, gallery, map search, music toggle, scroll reveals, and demo RSVP form.
+This is a mobile-first, single-page wedding invitation with a modern luxury style.
 
-## Update your existing GitHub Pages site
+## Included
+- Invitation cover and reveal
+- Elegant typography, gold accents, subtle floating particles
+- Scroll-triggered section reveals and gentle hover transitions
+- Countdown timer
+- Muhurtham and reception details
+- Click-to-expand photo gallery
+- Background music toggle
+- Demo RSVP form (does not send or store responses)
+- Mobile navigation and reduced-motion accessibility
+
+## Publish/update on GitHub Pages
 1. Extract this ZIP.
-2. Open https://github.com/thangamanikandan2610-prog/Wedding-invitation
-3. Click **Add file → Upload files**.
-4. Upload `index.html`, replacing the existing file, then click **Commit changes**.
-5. Wait 1–3 minutes and refresh the published site.
+2. Open your repository and choose **Add file → Upload files**.
+3. Upload `index.html` from this folder, replacing the existing `index.html`.
+4. Click **Commit changes**.
+5. Wait 1–3 minutes, then hard-refresh the live site with `Ctrl + F5`.
 
-Demo names, family names, times, and venue should be changed before sharing. RSVP currently only shows an on-page confirmation and does not store/send replies. Photos and music use external URLs.
+## Before sharing
+Edit the sample details in `index.html`: names (Arjun / Meera), date (22 November 2026), times, venue/address, map links, and all image URLs. Replace sample photos with your own hosted image URLs. The music and photos load from external URLs and need an internet connection.
+
+## Important
+The RSVP is only a front-end demo. It does not email, transmit, or store guest responses. A backend or form service is required for real RSVPs.
