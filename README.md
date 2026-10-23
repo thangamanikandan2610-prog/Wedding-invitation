@@ -1,27 +1,15 @@
-# Modern Luxury Wedding Invitation (GitHub Pages)
+# Poorani & Deva — Modern Luxury Wedding Invitation
 
-This is a mobile-first, single-page wedding invitation with a modern luxury style.
+## Personalised details
+- Couple: Poorani & Deva
+- Engagement: 12 December 2026, 10:00 AM (default time)
+- Marriage: 13 December 2026, 7:30 AM (default time)
+- Venue: Sample Wedding Hall, Madurai, Tamil Nadu (placeholder)
 
-## Included
-- Invitation cover and reveal
-- Elegant typography, gold accents, subtle floating particles
-- Scroll-triggered section reveals and gentle hover transitions
-- Countdown timer
-- Muhurtham and reception details
-- Click-to-expand photo gallery
-- Background music toggle
-- Demo RSVP form (does not send or store responses)
-- Mobile navigation and reduced-motion accessibility
-
-## Publish/update on GitHub Pages
+## Publish to GitHub Pages
 1. Extract this ZIP.
-2. Open your repository and choose **Add file → Upload files**.
-3. Upload `index.html` from this folder, replacing the existing `index.html`.
-4. Click **Commit changes**.
-5. Wait 1–3 minutes, then hard-refresh the live site with `Ctrl + F5`.
+2. Upload `index.html` and the complete `photos` folder to the root of your GitHub repository.
+3. Commit the changes. Keep the `photos` folder name and image filenames unchanged.
+4. Wait a few minutes and refresh your GitHub Pages website.
 
-## Before sharing
-Edit the sample details in `index.html`: names (Arjun / Meera), date (22 November 2026), times, venue/address, map links, and all image URLs. Replace sample photos with your own hosted image URLs. The music and photos load from external URLs and need an internet connection.
-
-## Important
-The RSVP is only a front-end demo. It does not email, transmit, or store guest responses. A backend or form service is required for real RSVPs.
+The RSVP form is currently a front-end demo and does not save responses. Venue and times can be edited later. Music uses an external audio URL and requires internet access.
