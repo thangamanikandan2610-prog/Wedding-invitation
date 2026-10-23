@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#641e2b" />
+  <title>Wedding Invitation | Arjun & Meera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ivory:#f7f0e6;--paper:#fffaf2;--gold:#c5a15a;--maroon:#641e2b;--ink:#352725;--muted:#7e6b61}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ivory);color:var(--ink);font-family:Poppins,sans-serif}
+    button,a{font:inherit}
+    .cover{min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at center,#fffaf3 0%,#f3e5d1 65%,#e8d4b7 100%);position:relative;overflow:hidden}
+    .cover:before,.cover:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #c5a15a66;border-radius:50%;transform:rotate(35deg)}
+    .cover:before{top:-130px;left:-80px}.cover:after{bottom:-150px;right:-80px}
+    .cover-card{width:min(100%,480px);text-align:center;padding:54px 28px 48px;border:1px solid var(--gold);outline:1px solid #c5a15a55;outline-offset:7px;background:#fffaf2d9;box-shadow:0 24px 70px #593b2015;position:relative}
+    .eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:10px;color:var(--maroon)}
+    .ornament{color:var(--gold);font-size:28px;margin:22px 0}
+    h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500}
+    .cover h1{font-size:clamp(42px,11vw,66px);line-height:.92;margin:18px 0;color:var(--maroon)}
+    .amp{font-style:italic;color:var(--gold);font-size:.75em}
+    .cover-date{letter-spacing:.18em;font-size:11px;margin:25px 0;color:var(--muted)}
+    .btn{border:0;background:var(--maroon);color:white;padding:13px 23px;letter-spacing:.08em;font-size:11px;text-transform:uppercase;cursor:pointer;transition:transform .2s,background .2s}
+    .btn:hover{transform:translateY(-2px);background:#7a2a39}
+    .section{padding:76px 20px;text-align:center}
+    .section-inner{max-width:850px;margin:auto}
+    .section-label{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:10px}
+    h2{font-size:clamp(36px,8vw,54px);color:var(--maroon);margin:12px 0 20px}
+    .intro{max-width:570px;margin:0 auto;color:var(--muted);font-size:13px;line-height:2}
+    .hero-photo{width:min(100%,560px);height:420px;margin:35px auto 24px;background:linear-gradient(#641e2b15,#641e2b20),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85') center/cover;border:8px solid #fffaf2;box-shadow:0 12px 35px #38261b18}
+    .couple-names{font-family:"Cormorant Garamond",serif;font-size:clamp(38px,8vw,56px);color:var(--maroon)}
+    .countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:30px auto 0}
+    .time-box{min-width:76px;padding:18px 12px;border:1px solid #c5a15a77;background:#fffaf280}
+    .time-box strong{display:block;font-family:"Cormorant Garamond",serif;font-size:32px;color:var(--maroon);font-weight:500}
+    .time-box span{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+    .events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:32px;text-align:left}
+    .event{background:var(--paper);padding:27px;border:1px solid #c5a15a66}
+    .event .symbol{font-size:24px;color:var(--gold)}
+    .event h3{font-size:30px;color:var(--maroon);margin:10px 0}
+    .event p{font-size:12px;line-height:1.9;color:var(--muted);margin:5px 0}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+    .gallery img{width:100%;height:260px;object-fit:cover}
+    .gallery img:first-child{grid-row:span 2;height:532px}
+    .map-link{display:inline-block;color:var(--maroon);border:1px solid var(--gold);padding:12px 20px;text-decoration:none;margin-top:18px;font-size:11px;letter-spacing:.08em}
+    .rsvp{background:var(--maroon);color:#fffaf2}
+    .rsvp h2{color:#fffaf2}.rsvp .section-label{color:#e0c17e}.rsvp .intro{color:#eadbd5}
+    .rsvp-form{max-width:420px;margin:28px auto 0;display:grid;gap:12px}
+    input,select,textarea{width:100%;padding:13px 14px;border:1px solid #c5a15a77;background:#fffaf2;color:var(--ink);font:inherit;font-size:12px;border-radius:0}
+    .rsvp-form .btn{background:var(--gold);color:#311c1e}
+    footer{padding:28px 20px;text-align:center;font-size:10px;letter-spacing:.12em;color:var(--muted)}
+    .hidden{display:none!important}
+    .fade{animation:fade .8s ease both}
+    @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.section{padding:60px 18px}.hero-photo{height:340px}.events{grid-template-columns:1fr}.gallery img{height:190px}.gallery img:first-child{height:392px}.cover-card{padding:44px 22px}.time-box{min-width:68px}}
+  </style>
+</head>
+<body>
+  <section class="cover" id="cover">
+    <div class="cover-card fade">
+      <div class="eyebrow">Together with our families</div>
+      <div class="ornament">❧ ✦ ❧</div>
+      <p class="eyebrow">Joyfully invite you to celebrate the wedding of</p>
+      <h1>Arjun <span class="amp">&</span><br>Meera</h1>
+      <div class="cover-date">SUNDAY · 22 NOVEMBER 2026</div>
+      <button class="btn" id="openInvitation">Open Invitation&nbsp; ↗</button>
+      <div class="ornament">❦</div>
+      <p class="eyebrow">A new chapter begins</p>
+    </div>
+  </section>
+
+  <main id="invitation" class="hidden">
+    <section class="section">
+      <div class="section-inner fade">
+        <div class="section-label">With love and blessings</div>
+        <h2>Two hearts, one beautiful journey</h2>
+        <p class="intro">With the blessings of our families, we invite you to be part of our special day and share in the joy as we begin our forever together.</p>
+        <div class="hero-photo" role="img" aria-label="Wedding celebration photo"></div>
+        <div class="couple-names">Arjun <span class="amp">&</span> Meera</div>
+        <p class="intro">Your presence will make our celebration truly unforgettable.</p>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fffaf2">
+      <div class="section-inner">
+        <div class="section-label">Save the date</div>
+        <h2>Counting down to forever</h2>
+        <p class="intro">The day our forever begins</p>
+        <div class="countdown" aria-label="Wedding countdown">
+          <div class="time-box"><strong id="days">--</strong><span>Days</span></div>
+          <div class="time-box"><strong id="hours">--</strong><span>Hours</span></div>
+          <div class="time-box"><strong id="minutes">--</strong><span>Minutes</span></div>
+          <div class="time-box"><strong id="seconds">--</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-label">The celebration</div>
+        <h2>Wedding Events</h2>
+        <div class="events">
+          <article class="event">
+            <div class="symbol">✦</div>
+            <h3>Muhurtham</h3>
+            <p><strong>Sunday, 22 November 2026</strong></p>
+            <p>7:30 AM – 9:00 AM</p>
+            <p>Shree Lakshmi Mahal<br>Madurai, Tamil Nadu</p>
+          </article>
+          <article class="event">
+            <div class="symbol">❦</div>
+            <h3>Reception</h3>
+            <p><strong>Saturday, 21 November 2026</strong></p>
+            <p>6:30 PM onwards</p>
+            <p>Shree Lakshmi Mahal<br>Madurai, Tamil Nadu</p>
+          </article>
+        </div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Wedding+hall+Madurai+Tamil+Nadu" target="_blank" rel="noopener">VIEW LOCATION ON MAP ↗</a>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fffaf2">
+      <div class="section-inner">
+        <div class="section-label">A few memories</div>
+        <h2>Our Moments</h2>
+        <p class="intro">A little glimpse of the journey that brought us here.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=700&q=85" alt="Wedding couple">
+          <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=85" alt="Wedding details">
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp">
+      <div class="section-inner">
+        <div class="section-label">We hope you can join us</div>
+        <h2>Kindly RSVP</h2>
+        <p class="intro">Please let us know if you will be joining our celebration.</p>
+        <form class="rsvp-form" id="rsvpForm">
+          <input id="guestName" type="text" placeholder="Your full name" required>
+          <select id="attendance" required>
+            <option value="">Will you be attending?</option>
+            <option value="Joyfully accepts">Joyfully accepts</option>
+            <option value="Regretfully declines">Regretfully declines</option>
+          </select>
+          <input id="guestCount" type="number" min="1" max="20" value="1" placeholder="Number of guests" required>
+          <button class="btn" type="submit">Send RSVP</button>
+        </form>
+        <p id="rsvpMessage" class="intro" style="margin-top:18px"></p>
+      </div>
+    </section>
+    <footer>MADE WITH LOVE · ARJUN & MEERA · 2026</footer>
+  </main>
+
+  <script>
+    const openButton = document.getElementById('openInvitation');
+    openButton.addEventListener('click', () => {
+      document.getElementById('invitation').classList.remove('hidden');
+      document.getElementById('invitation').scrollIntoView({behavior:'smooth'});
+    });
+
+    // Demo date: 22 November 2026 at 7:30 AM India time.
+    const weddingDate = new Date('2026-11-22T07:30:00+05:30').getTime();
+    function updateCountdown(){
+      let diff = Math.max(0, weddingDate - Date.now());
+      const values = {
+        days: Math.floor(diff / 86400000),
+        hours: Math.floor((diff % 86400000) / 3600000),
+        minutes: Math.floor((diff % 3600000) / 60000),
+        seconds: Math.floor((diff % 60000) / 1000)
+      };
+      Object.entries(values).forEach(([id,value]) => document.getElementById(id).textContent = String(value).padStart(2,'0'));
+    }
+    updateCountdown();
+    setInterval(updateCountdown,1000);
+
+    document.getElementById('rsvpForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('guestName').value.trim();
+      const attendance = document.getElementById('attendance').value;
+      const count = document.getElementById('guestCount').value;
+      const message = `RSVP preview: ${name} — ${attendance}; guests: ${count}. This demo does not save or send responses yet.`;
+      document.getElementById('rsvpMessage').textContent = message;
+    });
+  </script>
+</body>
+</html>
